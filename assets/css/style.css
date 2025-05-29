@@ -17,55 +17,7 @@
   font-style:normal;
 }
 
-/* ---------- Coding Profiles ---------- */
-#coding-profiles {
-background: transparent;  /* matches the soft pastel vibe in your screenshot */
-}
 
-.profile-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: .75rem;
-  text-decoration: none;
-  padding: 1.25rem 1rem;
-  border: 2px solid rgba(128, 128, 255, 0.25);
-  border-radius: 1.25rem;
-  background: rgba(255, 255, 255, 0.65);
-  backdrop-filter: blur(8px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
-  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
-}
-
-.profile-card:hover,
-.profile-card:focus-visible {
-  transform: translateY(-6px) scale(1.03);
-  border-color: var(--primary, #8b5cf6);
-  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.12);
-}
-
-.profile-img {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-}
-
-.profile-name {
-  font-weight: 600;
-  font-size: 1rem;
-  color: var(--bs-dark, #333);
-}
-
-@media (prefers-color-scheme: dark) {
-  #coding-profiles {
-    background: radial-gradient(circle at bottom right, #1b1b2b 0%, #0f172a 100%);
-  }
-  .profile-card {
-    background: rgba(30, 41, 59, 0.6);
-    border-color: rgba(139, 92, 246, 0.35);
-  }
-  .profile-name { color: #f8fafc; }
-}
 
 /* Global Variables */
 :root{
@@ -339,6 +291,56 @@ a:hover{
         opacity: 0;
         visibility: hidden;
     }
+}
+
+/* ---------- Coding Profiles ---------- */
+#coding-profiles {
+background: transparent;  /* matches the soft pastel vibe in your screenshot */
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .75rem;
+  text-decoration: none;
+  padding: 1.25rem 1rem;
+  border: 2px solid rgba(128, 128, 255, 0.25);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+
+.profile-card:hover,
+.profile-card:focus-visible {
+  transform: translateY(-6px) scale(1.03);
+  border-color: var(--primary, #8b5cf6);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.12);
+}
+
+.profile-img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.profile-name {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--bs-dark, #333);
+}
+
+@media (prefers-color-scheme: dark) {
+  #coding-profiles {
+    background: radial-gradient(circle at bottom right, #1b1b2b 0%, #0f172a 100%);
+  }
+  .profile-card {
+    background: rgba(30, 41, 59, 0.6);
+    border-color: rgba(139, 92, 246, 0.35);
+  }
+  .profile-name { color: #f8fafc; }
 }
 
 /*--------------------------------------------------------------
