@@ -3,14 +3,18 @@
 # Global Settings
 --------------------------------------------------------------*/
 
-@font-face {
-    font-family: 'Agustina';
-    src: url('assets/fonts/Agustina.woff') format('woff');
+@font-face{
+  font-family:'Agustina';
+  src:url('../fonts/Agustina.woff') format('woff');   /* 1 level up */
+  font-weight:normal;
+  font-style:normal;
 }
 
-@font-face {
-    font-family: 'Dancing Script';
-    src: url('assets/fonts/DancingScript-Medium.ttf') format('truetype');
+@font-face{
+  font-family:'Dancing Script';
+  src:url('../fonts/DancingScript-Medium.ttf') format('truetype');  /* 1 level up */
+  font-weight:normal;
+  font-style:normal;
 }
 
 
